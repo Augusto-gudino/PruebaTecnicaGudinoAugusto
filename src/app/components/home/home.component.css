@@ -1,0 +1,30 @@
+.contenedor{
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f5f7fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #000.1;
+    
+    font-size: 16px;
+    background-color: #e7d3f2;
+}
+
+h2{
+    background-color: #390d5d;
+    color:#ebebeb;
+    font-size: 32px;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+   
+}
+
+.encabezado{
+    background-color: #390d5d;
+    color:#ebebeb;
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+}

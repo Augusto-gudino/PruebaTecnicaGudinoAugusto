@@ -1,0 +1,35 @@
+
+.table-container {
+    margin-top: 20px;
+    border: 8px solid #0000;
+    border-radius: 10px;    
+}
+
+
+th{
+    color:#e6e6fa;
+    background-color: #4b0082;  
+    font-size: 18px;  
+}
+
+td{
+    color: #000;
+    background-color: #e6e6fa;
+      
+}
+td:hover{
+    background-color: #966ab1;
+    color: #e6e6fa;
+    
+    
+}
+
+.filter-input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    background-color:#ccc;
+}
+
