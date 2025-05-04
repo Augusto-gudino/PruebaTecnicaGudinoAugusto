@@ -1,59 +1,99 @@
-# AngularPruebaTecnica
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.10.
+## Prueba Técnica - Angular 19
 
-## Development server
+## Objetivo
 
-To start a local development server, run:
+Construir una aplicación Angular 19 que consuma una API externa (JSONPlaceholder), muestre los datos de usuarios en una tabla usando una librería visual (PrimeNG) y permita filtrarlos por nombre o ciudad. Esta prueba evalúa el consumo de servicios, uso de Observables, componentes standalone, y manejo de entrada/salida entre componentes.
 
-```bash
-ng serve
-```
+---
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Tecnologías Utilizadas
 
-## Code scaffolding
+- **Angular 19** (con standalone components)
+- **PrimeNG** (para la tabla y estilos)
+- **JSONPlaceholder API** (https://jsonplaceholder.typicode.com/users)
+- **Vite** (como bundler moderno para Angular)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+## Estructura del Proyecto
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-```bash
-ng generate --help
-```
+src/
+│
+├── app/
+│   ├── app.component.ts
+│   ├── app.config.ts
+│   ├── components/
+│   │   ├── home/
+│   │   │   ├── home.component.ts
+│   │   │   └── home.component.html
+│   │   └── user-table/
+│   │       ├── user-table.component.ts
+│   │       ├── user-table.component.html
+│   │       └── user-table.component.css
+│   └── services/
+│       └── user.service.ts
 
-## Building
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+## Instalación y Ejecución
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+1. Se debe clonar el repositorio:
 
-## Running unit tests
+   git clone https://github.com/tuusuario/angular-user-table.git
+   
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+2. Instale dependencias:
+   
+   npm install
+   
 
-```bash
-ng test
-```
+3. Ejecute la aplicación:
+   
+   npm run dev
+   
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+## Funcionalidades
 
-```bash
-ng e2e
-```
+- Consumo de API externa con `HttpClient`
+- Presentación de datos en tabla con PrimeNG (`<p-table>`)
+- Filtro en tiempo real por nombre y ciudad
+- Componentes standalone y reutilizables
+- Estilos personalizados con CSS
+- Paginación
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
-## Additional Resources
+---
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Conceptos Aplicados
+
+- **Inyección de dependencias**: El `UserService` se inyecta en el componente `HomeComponent`.
+- **Observables y suscripción**: Se usa `.subscribe()` para obtener datos desde un servicio HTTP.
+- **@Input()**: Paso de datos entre componentes (`Home → UserTable`).
+- **PrimeNG**: Para renderizar una tabla interactiva con filtros, estilos y paginación.
+
+---
+
+## Capturas de Pantalla
+Vista de la tabla
+![Imagen de tabla]
+
+![TablaConUsuarios](https://github.com/user-attachments/assets/a97906f0-6f64-477a-9aca-c6d8e8bfd763)
+
+Vista de la tabla con filtro aplicado
+
+![ImagenDeLaTablaConFiltroAplicado](https://github.com/user-attachments/assets/2d3977f4-d9cd-4b28-a345-94e2e78184ef)
+
+
+
+---
+
+Augusto Leonel Gudiño Oviedo
+- GitHub: [@Augusto-gudino](https://github.com/Augusto-gudino)
+- Proyecto creado como práctica técnica para Angular 19.
+
+---
