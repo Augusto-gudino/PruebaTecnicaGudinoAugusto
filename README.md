@@ -80,7 +80,7 @@ src/
 
 ## Capturas de Pantalla
 Vista de la tabla
-![Imagen de tabla]
+
 
 ![TablaConUsuarios](https://github.com/user-attachments/assets/a97906f0-6f64-477a-9aca-c6d8e8bfd763)
 
